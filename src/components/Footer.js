@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const Div = styled.div`
   /* border-top: 1px #e0e2e8 solid; */
-  color: #696969;
-  padding: 20px;
+  color: #9ca1a5;
+  padding: 20px 16px;
   text-align: center;
 
   a {
@@ -12,16 +12,17 @@ const Div = styled.div`
 
     @media (hover: hover) {
       & {
-        transition: height 200ms ease-in;
+        transition: color 200ms ease-in;
       }
 
       &:hover {
+        color: #1262f8;
       }
     }
 
     @media (hover: none) {
       &:active {
-        color: #6688ea;
+        color: #1262f8;
       }
     }
   }
@@ -31,13 +32,12 @@ const Footer = () => {
   return (
     <Div>
       <p>
-        Built by{' '}
         <a
           href="https://shashiirk.github.io/portfolio"
           target="_blank"
           rel="noreferrer"
         >
-          Shashikanth
+          Built by Shashikanth
         </a>
       </p>
     </Div>
