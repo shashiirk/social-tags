@@ -11,8 +11,14 @@ const Div = styled.div`
   form {
     width: 100%;
 
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
     .form-control {
-      margin-bottom: 18px;
+      margin-bottom: 16px;
 
       label {
         display: block;
@@ -73,33 +79,26 @@ const Form = () => {
   return (
     <Div>
       <form>
+        <h2>Fill in the details</h2>
         <div className="form-control">
           <label htmlFor="title">Title</label>
-          <input type="text" id="title" placeholder="Social Tags" />
+          <input type="text" id="title" placeholder="Your website's title" />
         </div>
         <div className="form-control">
           <label htmlFor="description">Description</label>
           <input
             type="text"
             id="description"
-            placeholder="Generate essential social media meta tags"
+            placeholder="Your website's description"
           />
         </div>
         <div className="form-control">
           <label htmlFor="website">Website URL</label>
-          <input
-            type="text"
-            id="website"
-            placeholder="https://shashiirk.github.io/social-tags"
-          />
+          <input type="text" id="website" placeholder="Your website's URL" />
         </div>
         <div className="form-control">
           <label htmlFor="image">Image URL</label>
-          <input
-            type="text"
-            id="image"
-            placeholder="https://user-images.githubusercontent.com/48406108.png"
-          />
+          <input type="text" id="image" placeholder="Your image URL" />
         </div>
         <div className="form-control">
           <button type="submit">Generate</button>
