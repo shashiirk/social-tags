@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import styled from 'styled-components';
 
 const Div = styled.div`
@@ -76,13 +77,34 @@ const Div = styled.div`
 `;
 
 const Form = () => {
+  const titleRef = useRef();
+  const descriptionRef = useRef();
+  const websiteRef = useRef();
+  const imageRef = useRef();
+
+  const submitFormHandler = (event) => {
+    event.preventDefault();
+
+    const details = {
+      title: titleRef.current.value.trim(),
+      description: descriptionRef.current.value.trim(),
+      websiteURL: websiteRef.current.value.trim(),
+      imageURL: imageRef.current.value.trim(),
+    };
+  };
+
   return (
     <Div>
-      <form>
+      <form onSubmit={submitFormHandler}>
         <h2>Fill in the details</h2>
         <div className="form-control">
           <label htmlFor="title">Title</label>
-          <input type="text" id="title" placeholder="Your website's title" />
+          <input
+            type="text"
+            id="title"
+            placeholder="Your website's title"
+            ref={titleRef}
+          />
         </div>
         <div className="form-control">
           <label htmlFor="description">Description</label>
@@ -90,15 +112,26 @@ const Form = () => {
             type="text"
             id="description"
             placeholder="Your website's description"
+            ref={descriptionRef}
           />
         </div>
         <div className="form-control">
           <label htmlFor="website">Website URL</label>
-          <input type="text" id="website" placeholder="Your website's URL" />
+          <input
+            type="text"
+            id="website"
+            placeholder="Your website's URL"
+            ref={websiteRef}
+          />
         </div>
         <div className="form-control">
           <label htmlFor="image">Image URL</label>
-          <input type="text" id="image" placeholder="Your image URL" />
+          <input
+            type="text"
+            id="image"
+            placeholder="Your image URL"
+            ref={imageRef}
+          />
         </div>
         <div className="form-control">
           <button type="submit">Generate</button>

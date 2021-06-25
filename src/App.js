@@ -20,6 +20,8 @@ const Div = styled.div`
 `;
 
 function App() {
+  const [] = useState();
+
   return (
     <div className="app">
       <Header />
