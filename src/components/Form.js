@@ -14,7 +14,7 @@ const Div = styled.div`
 
     h2 {
       font-size: 20px;
-      font-weight: 600;
+      font-weight: 400;
       margin-bottom: 20px;
     }
 
@@ -23,7 +23,7 @@ const Div = styled.div`
 
       label {
         display: block;
-        font-weight: 500;
+        /* font-weight: 500; */
         margin-bottom: 4px;
       }
 

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import logo from '../assets/logo.svg';
+
 const Div = styled.div`
   /* border-bottom: 1px #e0e2e8 solid; */
   max-width: 1024px;
@@ -10,9 +12,21 @@ const Div = styled.div`
   justify-content: space-between;
 `;
 
-const Title = styled.h2`
-  font-size: 24px;
-  font-weight: 600;
+const Title = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 12px;
+  }
 `;
 
 const Anchor = styled.a`
@@ -53,7 +67,10 @@ const Anchor = styled.a`
 const Header = () => {
   return (
     <Div>
-      <Title>Social Tags</Title>
+      <Title>
+        <img src={logo} alt="logo" />
+        <h1>Social Tags</h1>
+      </Title>
       <Anchor href="https://github.com">
         <svg
           xmlns="http://www.w3.org/2000/svg"
