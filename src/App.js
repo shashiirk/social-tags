@@ -44,7 +44,7 @@ function App() {
       <Container>
         <Div>
           <Form onSubmit={setDetailsHandler} />
-          <Board {...details} />
+          <Board details={details} />
         </Div>
       </Container>
       <Footer />
