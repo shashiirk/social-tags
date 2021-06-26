@@ -5,7 +5,7 @@ const Div = styled.div`
   /* border: 1px red solid; */
   border-right: 1px #d8dbdd solid;
   width: 100%;
-  padding: 24px;
+  padding: 26px;
   display: flex;
   align-items: center;
 
@@ -55,7 +55,8 @@ const Div = styled.div`
       background-color: #1262f8;
       color: white;
       cursor: pointer;
-      margin-top: 8px;
+      margin-top: 14px;
+      margin-bottom: 6px;
 
       @media (hover: hover) {
         & {
@@ -79,6 +80,7 @@ const Div = styled.div`
     & {
       border-right: none;
       border-bottom: 1px #d8dbdd solid;
+      padding: 14px;
     }
   }
 `;

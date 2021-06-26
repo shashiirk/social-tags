@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import styled from 'styled-components';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const Div = styled.div`
   /* border: 1px blue solid; */
@@ -45,12 +47,14 @@ const Body = styled.div`
   > div {
     /* border: 1px green solid; */
     white-space: nowrap;
+    padding-bottom: 14px;
 
     .newline {
       margin-bottom: 16px;
     }
 
     .comment {
+      font-style: italic;
       color: #909194;
     }
 
@@ -77,16 +81,52 @@ const Foot = styled.div`
   border-top: 1px #d8dbdd solid;
   padding: 14px;
 
-  p {
-    .code {
-      font-family: monospace;
-      font-size: 16px;
+  button {
+    font: inherit;
+    width: 64px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px #1262f8 solid;
+    background-color: white;
+    color: #1262f8;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (hover: hover) {
+      & {
+        transition: background-color 200ms ease-in;
+      }
+
+      &:hover {
+        background-color: #dde8fd;
+      }
+    }
+
+    @media (hover: none) {
+      &:active {
+        background-color: #dde8fd;
+      }
+    }
+  }
+
+  ol {
+    padding: 14px 0 0 14px;
+    font-size: 14px;
+    color: #656a6e;
+
+    li {
+      .code {
+        font-family: monospace;
+        font-size: 14px;
+      }
     }
   }
 `;
 
-const Board = ({ title, description, websiteURL, imageURL }) => {
-  const code = (
+const actualCode = ({ title, description, websiteURL, imageURL }) => {
+  return (
     <div>
       <div className="comment">
         <span className="token">&lt;!-- Primary Meta Tags --&gt;</span>
@@ -202,6 +242,58 @@ const Board = ({ title, description, websiteURL, imageURL }) => {
       </div>
     </div>
   );
+};
+
+const copyableCode = ({ title, description, websiteURL, imageURL }) => {
+  return `
+  <!-- Primary Meta Tags -->
+  <title>${title}</title>
+  <meta name="title" content="${title}">
+  <meta name="description" content="${description}">
+  
+  <!-- Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${websiteURL}">
+  <meta property="og:title" content="${title}">
+  <meta property="og:description" content="${description}">
+  <meta property="og:image" content="${imageURL}">
+  
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="${websiteURL}">
+  <meta name="twitter:title" content="${title}">
+  <meta name="twitter:description" content="${description}">
+  <meta name="twitter:image" content="${imageURL}">
+  `;
+};
+
+const Board = (props) => {
+  const [isCopied, setIsCopied] = useState(false);
+
+  const copyTextHandler = () => {
+    setIsCopied(true);
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 2000);
+  };
+
+  const copyIcon = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="icon icon-tabler icon-tabler-check"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      strokeWidth="2.5"
+      stroke="#1262f8"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M5 12l5 5l10 -10" />
+    </svg>
+  );
 
   return (
     <Div>
@@ -210,12 +302,21 @@ const Board = ({ title, description, websiteURL, imageURL }) => {
         <div></div>
         <div></div>
       </Head>
-      <Body>{code}</Body>
+      <Body>{actualCode(props.details)}</Body>
       <Foot>
-        <p>
-          Copy it into the <span className="code">&lt;head&gt;</span> of your
-          website
-        </p>
+        <CopyToClipboard
+          text={copyableCode(props.details)}
+          onCopy={copyTextHandler}
+        >
+          <button>{!isCopied ? 'Copy' : copyIcon}</button>
+        </CopyToClipboard>
+        <ol>
+          <li>
+            Copy it into the <span className="code">&lt;head&gt;</span> of your
+            website
+          </li>
+          <li>Make changes if required</li>
+        </ol>
       </Foot>
     </Div>
   );
