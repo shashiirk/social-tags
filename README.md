@@ -1,6 +1,6 @@
 # Social Tags
 
-Improve how your website is appeared when it is shared across the platforms like Facebook, Twitter, LinkedIn, Pinterest etc. Social Tags is a tool you can use to quickly generate essential meta tags that makes your website even more presentable.
+Meta tags determine how your website is appeared when it is shared across the social platforms like Facebook, Twitter, LinkedIn, Pinterest etc. Social Tags is a tool you can use to quickly generate essential meta tags that makes your website even more presentable.
 
 ## Preview
 
