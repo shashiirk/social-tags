@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 
 import Header from './components/Header';
@@ -17,18 +18,33 @@ const Div = styled.div`
   border: 1px #d8dbdd solid;
   border-radius: 8px;
   display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
+const defaultDetails = {
+  title: '',
+  description: '',
+  websiteURL: '',
+  imageURL: '',
+};
+
 function App() {
-  const [] = useState();
+  const [details, setDetails] = useState(defaultDetails);
+
+  const setDetailsHandler = (value) => {
+    setDetails(value);
+  };
 
   return (
     <div className="app">
       <Header />
       <Container>
         <Div>
-          <Form />
-          <Board />
+          <Form onSubmit={setDetailsHandler} />
+          <Board {...details} />
         </Div>
       </Container>
       <Footer />

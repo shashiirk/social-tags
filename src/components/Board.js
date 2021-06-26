@@ -55,6 +55,7 @@ const Body = styled.div`
     }
 
     .tagline {
+      margin-bottom: 2px;
       color: #424648;
 
       .tag {
@@ -84,7 +85,7 @@ const Foot = styled.div`
   }
 `;
 
-const Board = () => {
+const Board = ({ title, description, websiteURL, imageURL }) => {
   const code = (
     <div>
       <div className="comment">
@@ -92,7 +93,7 @@ const Board = () => {
       </div>
       <div className="tagline">
         &lt;<span className="tag">title</span>&gt;
-        <span className="content">Meta Tags — Preview, Edit and Generate</span>
+        <span className="content">{title}</span>
         &lt;/<span className="tag">title</span>&gt;
       </div>
       <div className="tagline">
@@ -100,7 +101,7 @@ const Board = () => {
         <span className="attribute">name</span>="
         <span className="value">title</span>"{' '}
         <span className="attribute">content</span>="
-        <span className="value">Meta Tags — Preview, Edit and Generate</span>
+        <span className="value">{title}</span>
         "&gt;
       </div>
       <div className="tagline">
@@ -108,7 +109,7 @@ const Board = () => {
         <span className="attribute">name</span>="
         <span className="value">description</span>"{' '}
         <span className="attribute">content</span>="
-        <span className="value">Meta Tags — Preview, Edit and Generate</span>
+        <span className="value">{description}</span>
         "&gt;
       </div>
       <div className="newline"></div>
@@ -128,7 +129,7 @@ const Board = () => {
         <span className="attribute">property</span>="
         <span className="value">og:url</span>"{' '}
         <span className="attribute">content</span>="
-        <span className="value">Meta Tags — Preview, Edit and Generate</span>
+        <span className="value">{websiteURL}</span>
         "&gt;
       </div>
       <div className="tagline">
@@ -136,7 +137,7 @@ const Board = () => {
         <span className="attribute">property</span>="
         <span className="value">og:title</span>"{' '}
         <span className="attribute">content</span>="
-        <span className="value">Meta Tags — Preview, Edit and Generate</span>
+        <span className="value">{title}</span>
         "&gt;
       </div>
       <div className="tagline">
@@ -144,7 +145,7 @@ const Board = () => {
         <span className="attribute">property</span>="
         <span className="value">og:description</span>"{' '}
         <span className="attribute">content</span>="
-        <span className="value">Meta Tags — Preview, Edit and Generate</span>
+        <span className="value">{description}</span>
         "&gt;
       </div>
       <div className="tagline">
@@ -152,7 +153,7 @@ const Board = () => {
         <span className="attribute">property</span>="
         <span className="value">og:image</span>"{' '}
         <span className="attribute">content</span>="
-        <span className="value">Meta Tags — Preview, Edit and Generate</span>
+        <span className="value">{imageURL}</span>
         "&gt;
       </div>
       <div className="newline"></div>
@@ -161,7 +162,7 @@ const Board = () => {
       </div>
       <div className="tagline">
         &lt;<span className="tag">meta</span>{' '}
-        <span className="attribute">property</span>="
+        <span className="attribute">name</span>="
         <span className="value">twitter:card</span>"{' '}
         <span className="attribute">content</span>="
         <span className="value">summary_large_image</span>
@@ -169,40 +170,38 @@ const Board = () => {
       </div>
       <div className="tagline">
         &lt;<span className="tag">meta</span>{' '}
-        <span className="attribute">property</span>="
+        <span className="attribute">name</span>="
         <span className="value">twitter:url</span>"{' '}
         <span className="attribute">content</span>="
-        <span className="value">Meta Tags — Preview, Edit and Generate</span>
+        <span className="value">{websiteURL}</span>
         "&gt;
       </div>
       <div className="tagline">
         &lt;<span className="tag">meta</span>{' '}
-        <span className="attribute">property</span>="
+        <span className="attribute">name</span>="
         <span className="value">twitter:title</span>"{' '}
         <span className="attribute">content</span>="
-        <span className="value">Meta Tags — Preview, Edit and Generate</span>
+        <span className="value">{title}</span>
         "&gt;
       </div>
       <div className="tagline">
         &lt;<span className="tag">meta</span>{' '}
-        <span className="attribute">property</span>="
+        <span className="attribute">name</span>="
         <span className="value">twitter:description</span>"{' '}
         <span className="attribute">content</span>="
-        <span className="value">Meta Tags — Preview, Edit and Generate</span>
+        <span className="value">{description}</span>
         "&gt;
       </div>
       <div className="tagline">
         &lt;<span className="tag">meta</span>{' '}
-        <span className="attribute">property</span>="
+        <span className="attribute">name</span>="
         <span className="value">twitter:image</span>"{' '}
         <span className="attribute">content</span>="
-        <span className="value">Meta Tags — Preview, Edit and Generate</span>
+        <span className="value">{imageURL}</span>
         "&gt;
       </div>
     </div>
   );
-
-  console.log(code);
 
   return (
     <Div>

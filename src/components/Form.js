@@ -45,38 +45,45 @@ const Div = styled.div`
           color: #9ca1a5;
         }
       }
+    }
 
-      button {
-        font: inherit;
-        border-radius: 8px;
-        border: none;
-        padding: 10px 20px;
-        background-color: #1262f8;
-        color: white;
-        cursor: pointer;
-        margin-top: 8px;
+    button {
+      font: inherit;
+      border-radius: 8px;
+      border: none;
+      padding: 10px 20px;
+      background-color: #1262f8;
+      color: white;
+      cursor: pointer;
+      margin-top: 8px;
 
-        @media (hover: hover) {
-          & {
-            transition: background-color 200ms ease-in;
-          }
-
-          &:hover {
-            background-color: #064dd1;
-          }
+      @media (hover: hover) {
+        & {
+          transition: background-color 200ms ease-in;
         }
 
-        @media (hover: none) {
-          &:active {
-            background-color: #064dd1;
-          }
+        &:hover {
+          background-color: #064dd1;
+        }
+      }
+
+      @media (hover: none) {
+        &:active {
+          background-color: #064dd1;
         }
       }
     }
   }
+
+  @media (max-width: 768px) {
+    & {
+      border-right: none;
+      border-bottom: 1px #d8dbdd solid;
+    }
+  }
 `;
 
-const Form = () => {
+const Form = (props) => {
   const titleRef = useRef();
   const descriptionRef = useRef();
   const websiteRef = useRef();
@@ -91,6 +98,8 @@ const Form = () => {
       websiteURL: websiteRef.current.value.trim(),
       imageURL: imageRef.current.value.trim(),
     };
+
+    props.onSubmit(details);
   };
 
   return (
@@ -133,9 +142,7 @@ const Form = () => {
             ref={imageRef}
           />
         </div>
-        <div className="form-control">
-          <button type="submit">Generate</button>
-        </div>
+        <button type="submit">Generate</button>
       </form>
     </Div>
   );
