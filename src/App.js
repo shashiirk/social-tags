@@ -47,14 +47,25 @@ const defaultDetails = {
 
 function App() {
   const [details, setDetails] = useState(defaultDetails);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const setDetailsHandler = (value) => {
     setDetails(value);
   };
 
+  const scrollHandler = () => {
+    if (window.pageYOffset > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  window.addEventListener('scroll', scrollHandler);
+
   return (
     <div className="app">
-      <Header />
+      <Header isActive={isScrolled} />
       <Container>
         <Hero>
           Quickly generate essential meta tags for your website now 👇
