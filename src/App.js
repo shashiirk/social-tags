@@ -24,6 +24,20 @@ const Div = styled.div`
   }
 `;
 
+const Hero = styled.h1`
+  font-size: 48px;
+  font-weight: 600;
+  max-width: 768px;
+  width: 100%;
+  text-align: center;
+  margin: 8px auto 42px;
+  line-height: 1.4;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+`;
+
 const defaultDetails = {
   title: '',
   description: '',
@@ -42,6 +56,9 @@ function App() {
     <div className="app">
       <Header />
       <Container>
+        <Hero>
+          Quickly generate essential meta tags for your website now 👇
+        </Hero>
         <Div>
           <Form onSubmit={setDetailsHandler} />
           <Board details={details} />
