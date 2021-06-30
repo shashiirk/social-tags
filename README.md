@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="">
+  <a href="https://shashiirk.github.io/social-tags">
     <img alt="logo" src="src/assets/logo.svg" width="60" />
   </a>
 </p>
@@ -7,11 +7,15 @@
   Social Tags
 </h1>
 
-Meta tags determine how your website is appeared when it is shared across the social platforms like Facebook, Twitter, LinkedIn, Pinterest etc. Social Tags is a tool you can use to quickly generate essential meta tags that makes your website even more presentable.
+Meta tags contain information about the website. They determine how
+your website appears when it is shared across social platforms like
+Facebook, Twitter, LinkedIn, Pinterest etc. Social Tags is a tool you
+can use to quickly generate essential meta tags that makes your
+website even more presentable and thus boosts social media engagement.
 
 ## Live Demo
 
-See it live [here]().
+See it live [here](https://shashiirk.github.io/social-tags).
 
 ## Tools
 
