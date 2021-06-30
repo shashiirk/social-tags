@@ -6,6 +6,10 @@ const Div = styled.div`
   padding: 24px 16px;
   text-align: center;
 
+  p:first-child {
+    margin-bottom: 4px;
+  }
+
   a {
     color: inherit;
     text-decoration: none;
@@ -31,6 +35,11 @@ const Div = styled.div`
 const Footer = () => {
   return (
     <Div>
+      <p>
+        <a href="https://icons8.com" target="_blank" rel="noreferrer">
+          Icons by Icons8
+        </a>
+      </p>
       <p>
         <a
           href="https://shashiirk.github.io/portfolio"

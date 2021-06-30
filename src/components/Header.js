@@ -7,7 +7,7 @@ const Div = styled.div`
   top: 0;
   z-index: 10;
   background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(7px);
 
   ${(props) =>
     props.isActive &&

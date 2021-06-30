@@ -4,9 +4,12 @@ import styled from 'styled-components';
 import Header from './components/Header';
 import Form from './components/Form';
 import Board from './components/Board';
+import Info from './components/Info';
 import Footer from './components/Footer';
+import down from './assets/pointing-down.svg';
 
 const Container = styled.div`
+  /* border: 1px green solid; */
   flex: 1;
   max-width: 1024px;
   width: 100%;
@@ -33,8 +36,18 @@ const Hero = styled.h1`
   margin: 8px auto 42px;
   line-height: 1.4;
 
+  img {
+    width: 48px;
+  }
+
   @media (max-width: 768px) {
-    font-size: 32px;
+    & {
+      font-size: 32px;
+    }
+
+    img {
+      width: 32px;
+    }
   }
 `;
 
@@ -68,12 +81,14 @@ function App() {
       <Header isActive={isScrolled} />
       <Container>
         <Hero>
-          Quickly generate essential meta tags for your website now 👇
+          Quickly generate essential meta tags for your website now{' '}
+          <img src={down} alt="hand-pointing-down" />
         </Hero>
         <Div>
           <Form onSubmit={setDetailsHandler} />
           <Board details={details} />
         </Div>
+        <Info />
       </Container>
       <Footer />
     </div>
