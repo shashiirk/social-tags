@@ -84,7 +84,11 @@ const Header = (props) => {
   return (
     <Div isActive={props.isActive}>
       <Container>
-        <Title href="/" target="_blank" rel="noreferrer">
+        <Title
+          href="https://shashiirk.github.io/social-tags"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={logo} alt="logo" />
           <h1>Social Tags</h1>
         </Title>
