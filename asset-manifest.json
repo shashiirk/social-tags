@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.e00c82b0.chunk.css",
-    "main.js": "/static/js/main.e89aa369.chunk.js",
-    "main.js.map": "/static/js/main.e89aa369.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.1a56ac31.js",
-    "runtime-main.js.map": "/static/js/runtime-main.1a56ac31.js.map",
-    "static/js/2.f5d74e24.chunk.js": "/static/js/2.f5d74e24.chunk.js",
-    "static/js/2.f5d74e24.chunk.js.map": "/static/js/2.f5d74e24.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.e00c82b0.chunk.css.map": "/static/css/main.e00c82b0.chunk.css.map",
-    "static/js/2.f5d74e24.chunk.js.LICENSE.txt": "/static/js/2.f5d74e24.chunk.js.LICENSE.txt",
-    "static/media/logo.44f62fe0.svg": "/static/media/logo.44f62fe0.svg",
-    "static/media/pointing-down.3466afb3.svg": "/static/media/pointing-down.3466afb3.svg",
-    "static/media/test.5eda4f26.svg": "/static/media/test.5eda4f26.svg",
-    "static/media/thinking.31d5e5f0.svg": "/static/media/thinking.31d5e5f0.svg"
+    "main.css": "/social-tags/static/css/main.e00c82b0.chunk.css",
+    "main.js": "/social-tags/static/js/main.e89aa369.chunk.js",
+    "main.js.map": "/social-tags/static/js/main.e89aa369.chunk.js.map",
+    "runtime-main.js": "/social-tags/static/js/runtime-main.4e9259bd.js",
+    "runtime-main.js.map": "/social-tags/static/js/runtime-main.4e9259bd.js.map",
+    "static/js/2.1ab7fd02.chunk.js": "/social-tags/static/js/2.1ab7fd02.chunk.js",
+    "static/js/2.1ab7fd02.chunk.js.map": "/social-tags/static/js/2.1ab7fd02.chunk.js.map",
+    "index.html": "/social-tags/index.html",
+    "static/css/main.e00c82b0.chunk.css.map": "/social-tags/static/css/main.e00c82b0.chunk.css.map",
+    "static/js/2.1ab7fd02.chunk.js.LICENSE.txt": "/social-tags/static/js/2.1ab7fd02.chunk.js.LICENSE.txt",
+    "static/media/logo.44f62fe0.svg": "/social-tags/static/media/logo.44f62fe0.svg",
+    "static/media/pointing-down.3466afb3.svg": "/social-tags/static/media/pointing-down.3466afb3.svg",
+    "static/media/test.5eda4f26.svg": "/social-tags/static/media/test.5eda4f26.svg",
+    "static/media/thinking.31d5e5f0.svg": "/social-tags/static/media/thinking.31d5e5f0.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1a56ac31.js",
-    "static/js/2.f5d74e24.chunk.js",
+    "static/js/runtime-main.4e9259bd.js",
+    "static/js/2.1ab7fd02.chunk.js",
     "static/css/main.e00c82b0.chunk.css",
     "static/js/main.e89aa369.chunk.js"
   ]
