@@ -84,11 +84,15 @@ const Header = (props) => {
   return (
     <Div isActive={props.isActive}>
       <Container>
-        <Title href="https://github.com">
+        <Title href="/" target="_blank" rel="noreferrer">
           <img src={logo} alt="logo" />
           <h1>Social Tags</h1>
         </Title>
-        <Anchor href="https://github.com">
+        <Anchor
+          href="https://github.com/shashiirk/social-tags"
+          target="_blank"
+          rel="noreferrer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="icon icon-tabler icon-tabler-brand-github"
