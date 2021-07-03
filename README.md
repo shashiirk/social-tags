@@ -36,4 +36,4 @@ See it live [here](https://shashiirk.github.io/social-tags).
 
 If you find this product useful then consider buying me a coffee 👇
 
-<p><a href="https://www.buymeacoffee.com/shashiirk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a></p>
+<p><a href="https://www.buymeacoffee.com/shashiirk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 30px !important;width: 109px !important;" ></a></p>
