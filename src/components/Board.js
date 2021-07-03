@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const Div = styled.div`
-  /* border: 1px blue solid; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -37,7 +36,6 @@ const Head = styled.div`
 `;
 
 const Body = styled.div`
-  /* border: 1px grey solid; */
   font-family: monospace;
   font-size: 14px;
   flex: 1;
@@ -45,7 +43,6 @@ const Body = styled.div`
   padding: 14px;
 
   > div {
-    /* border: 1px green solid; */
     white-space: nowrap;
     padding-bottom: 14px;
 

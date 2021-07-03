@@ -9,7 +9,6 @@ import Footer from './components/Footer';
 import down from './assets/pointing-down.svg';
 
 const Container = styled.div`
-  /* border: 1px green solid; */
   flex: 1;
   max-width: 1024px;
   width: 100%;

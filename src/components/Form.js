@@ -2,7 +2,6 @@ import { useRef } from 'react';
 import styled from 'styled-components';
 
 const Div = styled.div`
-  /* border: 1px red solid; */
   border-right: 1px #d8dbdd solid;
   width: 100%;
   padding: 26px;
@@ -23,7 +22,6 @@ const Div = styled.div`
 
       label {
         display: block;
-        /* font-weight: 500; */
         margin-bottom: 4px;
       }
 

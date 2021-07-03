@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const Div = styled.div`
-  /* border-top: 1px #e0e2e8 solid; */
   color: #9ca1a5;
   padding: 24px 16px;
   text-align: center;
