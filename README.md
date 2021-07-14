@@ -30,7 +30,7 @@ See it live [here](https://shashiirk.github.io/social-tags).
 
 ## Licence
 
-This project is licensed under [MIT](https://choosealicense.com/licenses/mit)
+This project is licensed under [MIT](https://choosealicense.com/licenses/mit).
 
 ## Support
 
