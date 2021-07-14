@@ -10,7 +10,7 @@
 <p align="center"><a href="https://en.wikipedia.org/wiki/Open_source"><img alt="open-source" src="https://img.shields.io/badge/OPEN-SOURCE-C13D3B?style=for-the-badge&labelColor=EA4761"></a> <a href="https://choosealicense.com/licenses/mit"><img alt="license-mit" src="https://img.shields.io/badge/LICENSE-MIT-D15E28?style=for-the-badge&labelColor=E36D26">
 </a></p>
 
-## Introduction
+## Description
 
 Meta tags contain information about the website. They determine how
 your website appears when it is shared across social platforms like
