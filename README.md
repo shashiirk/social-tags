@@ -18,6 +18,10 @@ Facebook, Twitter, LinkedIn, Pinterest etc. Social Tags is a tool you
 can use to quickly generate essential meta tags that makes your
 website even more presentable and thus boosts social media engagement.
 
+## Poster
+
+![poster](https://user-images.githubusercontent.com/48406108/154831473-ab21ce12-0654-4e15-a854-445d5023a181.png)
+
 ## Live Demo
 
 See it live [here](https://shashiirk.github.io/social-tags).
